@@ -22,7 +22,7 @@ function App() {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.get(`https:://localhost:5000/api/country/${inputValue}`);
+      const response = await axios.get(`http://localhost:5000/api/country/${inputValue}`);
       setCountryInfo(response.data);
       setIsLoading(false);
       setErrorMessage("");
